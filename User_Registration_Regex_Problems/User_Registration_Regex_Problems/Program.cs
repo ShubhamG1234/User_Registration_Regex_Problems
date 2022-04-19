@@ -7,14 +7,15 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome To Regex User Registration Problem");
+            Console.WriteLine("Enter last name");
             string inStr = Console.ReadLine();
 
-            //Create pattern for firstname
-            string firstName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
+            // Create pattren for Lastname
+            string lastName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
 
-            Regex regex = new Regex(firstName);
-            Console.WriteLine(regex.IsMatch(inStr)); //The IsMatch method is used to validate a string or  
-                                                     //to ensure that a string conforms to a particular pattern
+            Regex regex = new Regex(lastName);
+            Console.WriteLine(regex.IsMatch(inStr));
         }
     }
 }
